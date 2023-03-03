@@ -1,0 +1,60 @@
+%final_reort.tex
+\documentclass{article}
+
+\title{Car Navi Simulator using C Language}
+\author{Naoki Takano, B7TB1715}
+\date{\today}
+
+\begin{document}
+\maketitle
+
+\section{Codes}
+
+\begin{itemize}
+\item map.dat has been used to indicate the locations.
+\item When compiled and executed, the terminal asks the user to select the searching method. The user will have the option to search a particular intersection using name, id or coordinates of the intersection.
+\item The path from initial position to final destination is calculated using Djikstra's Algorithm. 
+\item OpenGL is used to display the map and the car movement from start to destination.
+\end{itemize}
+
+
+\section{Additional Features}
+\subsection{Additional Features on functions}
+\begin{itemize}
+	\item This Djikstra's Algorithym only calculates the shortest distance to the destination.
+	\item Program shows error code and exits if the user puts wrong input.
+	\item User can select the cruising speed depending on your mood.
+\end{itemize}
+
+\subsection{Features added to OpenGL part}
+\begin{itemize}
+	\item The background color is set to gray, just like Google Maps.
+	\item The color of the road and the selected path is white and blue respectively, just like Google Maps.
+	\item Arrow has a circle surrounded, just like Google Maps.
+	\item The marker used to denote the car is an arrow, like Google maps.
+	\item Different colors are used to plot the map to enable the user to differentiate between the intersections and roads.
+	\item Location name can be printed out in the map.
+        \item The markers used for initial position and final destination has been distinguished from the other map points.
+	\item Different line width has been used for drawing the car marker to make it visible. Also, the selected road is thicker than the other road, like GOogle Maps.
+	\item The marker for the car does not get distorted due to zooming, panning, and rotating.
+        \item The path followed by the car is highlighted using different color and line width, so you know where you are at.
+	\item The section of the road the car is currently in, is highlighted in different color for better visibility.
+	\item The immediate next intersection is highligted in different color for better understanding of car's current location.
+	\item Turn indicator shows which direction the car should turn next.
+	\item Estimated time of Arrival and Distance to turn is displayed.
+	\item Map can be moved around using `W',`A',`S',`D' keys
+	\item The map can be zoomed in and out using `Z' and `X' keys respectively.
+	\item The map can be rotated using `Q' and `E' keys respectively.
+	\item Map can be recenterd using `R' key.
+	\item `T' key fixes the poles to one direction.
+	\item Zooming in and out also changes the scales of the font for increasing visibility.
+	\item The fonts rotate perfectly so that they can be read easily irrespective of map orientation.	 
+	\item Arial font has been used so it is easy to read. 
+\end{itemize}
+
+\section{Conclusion}
+This class was very challenging, but I think I gained the basic idea of how programming works. Programming requires legion of organization and patience, and it was really difficult to make them run, but it felt good when the codes actually ran.
+Car navigation program was quite fun since I got to come up with my own ideas and share with others, too. People came up with many interesting features, and it is amazing how programs can actually make those features work!
+Thank you for the class!
+
+\end{document}

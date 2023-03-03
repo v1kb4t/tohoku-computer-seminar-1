@@ -1,0 +1,45 @@
+\title{Final Report}
+\author{Liew Qian Yu\\B7TB1710}
+\date{\today}
+
+\documentclass[12pt]{article}
+
+
+\begin{document}
+\maketitle
+\newpage
+
+\section{Introduction}
+We learned how to create a car navigation program and display it graphically. For the final assignment, our program has to satisfy four basic requirements. In addition, further improvements can be added to the program to generate a smoother and better use of the navigation system.
+
+\section{Basic Requirements}\
+\subsection {Display Map Graphically}
+To satisfy this requirement, OpenGL libraries were utilised. 
+\subsection {Determining Start Point and Destination Point} 
+To do this, the program allows the user to determine a start point and destination by keyboard input. This is done in the console. Additionally, the user can also select points by mouse input. This is done graphically on an OpenGL display.
+\subsection {Shortest Path}
+The shortest path connecting the start point and destination point is calculated using Djikstra's algorithm.
+\subsection {Animated Marker}
+A marker in the shape of an arrow is animated so that it moves from the start point to the destination following a determined path.
+\newpage
+\section{Additional Features}
+\subsection {Input Features}
+\begin{itemize}
+	\item The program will terminated if an invalid input is received. An error message will be displayed on the console along with the termination of the program.
+	\item Mouse input is added so that the user can select two points from a displayed map.
+	\item Two kinds of input interface. User can input based on a visual map or by search results.
+\end {itemize}
+\subsection {Display Features}
+\begin{itemize}
+	\item The start point and destination markers are displayed in a different colour to differentiate them from other points.
+	\item The text displayed will be translated to retain their positions when the map is panned or resized.
+	\item The map is rotated so that the direction of the moving object is always facing upwards of the screen.
+	\item An arrow is used to indicate the moving object so that the user can always know the direction in which the movement is directed towards.
+	\item When a visual map is displayed for mouse input, the map can be zoomed in or out by pressing keys "W" and "S" respectively.
+	\item The user is able to pan around the map using the keyboard cursor keys up, down, left, and right in the map displayed for mouse input. This allows the user to see the crossing points more clearly.
+\section{Conclusions}\label{conclusions}
+This project improved my understanding of C language and the OpenGL libraries. I managed to use the knowledge from other subjects when adding extra features to my GUI. Overall, this project has shown me that programming is not just about the language and syntax, it covers many fields of studies in a whole.
+\bibliographystyle{abbrv}
+\bibliography{main}
+
+\end{document}
